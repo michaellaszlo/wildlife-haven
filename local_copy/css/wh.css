@@ -34,13 +34,17 @@ a:hover {
   font-family: Lato, sans-serif;
   font-weight: 300;
 }
+#header a, h2, h3 {
+  font-size: 21px;
+}
 
 h1 {
   font-family: Paprika, sans-serif;
   margin-bottom: 20px;
 }
 h2 {
-  margin-top: 20px;
+  margin-top: 25px;
+  border-top: 2px solid #333;
   background: #05492b url(../i/tweed.darker.green.png);
   color: #fff;
   padding: 5px 20px 8px;
@@ -54,10 +58,10 @@ h4 {
   padding: 0px 20px;
 }
 p {
-  margin-top: 10px;
+  margin-top: 12px;
   padding: 0 20px;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 25px;
 }
 
 #footer {
@@ -81,10 +85,9 @@ p {
 }
 .contact .icon {
   margin-right: 3px;
-  font-size: 19px;
+  font-size: 21px;
 }
 #header a {
-  font-size: 18px;
   color: #fff;
   cursor: pointer;
   outline: 0;
@@ -98,18 +101,18 @@ p {
 }
 
 #content {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .donation {
-  padding-top: 10px;
+  padding-top: 12px;
   padding-left: 20px;
 }
 .donation .button {
   margin-bottom: 10px;
   display: inline-block;
   font-size: 24px;
-  padding: 5px 6px 6px 8px;
+  padding: 5px 8px 6px 8px;
   margin-right: 10px;
   border-radius: 6px;
   color: #222;
@@ -137,4 +140,31 @@ p {
 }
 .donation .button:hover .dollar {
   color: #536d92;
+}
+
+.amazon {
+  margin: 15px 0 25px;
+}
+.amazon a {
+  border-radius: 4px;
+  padding: 6px 10px 6px 6px;
+  font-size: 19px;
+  border: 2px solid #232f3e;
+  background: #232f3e;
+  color: #fff;
+}
+.amazon a:hover {
+  background: #fff;
+  color: #232f3e;
+}
+.amazon .fa {
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+  opacity: 1;
+  margin-right: 5px;
+  color: #fc9a18;
+}
+.amazon a:hover .fa {
+  color: #fc9a18;
 }

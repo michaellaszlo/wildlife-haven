@@ -24,4 +24,7 @@ https://developer.paypal.com/docs/classic/paypal-payments-standard/ht_test-pps-b
 Full chapter of information about Donate buttons
 https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/donation_buttons/
 
+HTML variables for standard buttons
+https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/#id08A6HI0709B
+
 
