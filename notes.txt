@@ -1,0 +1,27 @@
+
+Trying to match the design of the business card
+
+headline:
+  Oleo Script
+  Sansita One
+  Paprika
+
+
+PayPal links
+
+Create a Donate button
+https://www.paypal.com/us/webapps/mpp/get-started/donate-button
+
+Create a recurring donation button
+https://www.paypal.com/webapps/mpp/get-started/create-recurring-donation-button
+
+PayPal logos and buttons
+https://www.paypal.com/webapps/mpp/logos-buttons
+
+How to test standard buttons
+https://developer.paypal.com/docs/classic/paypal-payments-standard/ht_test-pps-buttons/
+
+Full chapter of information about Donate buttons
+https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/donation_buttons/
+
+
