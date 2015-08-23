@@ -1,0 +1,140 @@
+body {
+  font-family: Lato, serif;
+  color: #222;
+  background: #000;
+}
+body, h1, h2, h3, h4, p, div, a {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  background: #fff;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -khtml-user-drag: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #235695;
+}
+a:hover {
+  color: #952e36;
+}
+
+#header a, h1, h2, h3, h4 {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-family: Paprika, sans-serif;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-top: 20px;
+  background: #05492b url(../i/tweed.darker.green.png);
+  color: #fff;
+  padding: 5px 20px 8px;
+}
+h3 {
+  margin-top: 10px;
+  padding: 0px 20px;
+}
+h4 {
+  margin-top: 10px;
+  padding: 0px 20px;
+}
+p {
+  margin-top: 10px;
+  padding: 0 20px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+#footer {
+  background: #000;
+  height: 10px;
+}
+
+#header {
+  padding: 10px 20px 15px;
+  background: #222 url(../i/blur.dark.green.jpg);
+  color: #fff;
+}
+#header h1 {
+  margin: 0;
+}
+#header .contact {
+  display: inline-block;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-right: 12px;
+}
+.contact .icon {
+  margin-right: 3px;
+  font-size: 19px;
+}
+#header a {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+}
+#header a:hover {
+  color: #ffc;
+}
+
+#firstHeader {
+  margin-top: 0;
+}
+
+#content {
+  padding-bottom: 20px;
+}
+
+.donation {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.donation .button {
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 24px;
+  padding: 5px 6px 6px 8px;
+  margin-right: 10px;
+  border-radius: 6px;
+  color: #222;
+  cursor: pointer;
+  border: 2px solid #87a7b5;
+}
+.donation .button .dollar {
+  color: #87a7b5;
+  font-size: 19px;
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+.donation .button .period {
+  color: #87a7b5;
+  font-size: 17px;
+  position: relative;
+  bottom: 2px;
+  right: 1px;
+}
+.donation .button:hover {
+  border: 2px solid #536d92;
+  background: #ffe;
+  color: #000;
+}
+.donation .button:hover .dollar {
+  color: #536d92;
+}
