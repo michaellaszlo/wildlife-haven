@@ -115,9 +115,11 @@ p {
   padding: 5px 8px 6px 8px;
   margin-right: 10px;
   border-radius: 6px;
-  color: #222;
   cursor: pointer;
   border: 2px solid #87a7b5;
+}
+.donation .button .amount {
+  color: #444;
 }
 .donation .button .dollar {
   color: #87a7b5;
@@ -138,8 +140,23 @@ p {
   background: #ffe;
   color: #000;
 }
-.donation .button:hover .dollar {
+.button:hover .dollar, .button:hover .period {
   color: #536d92;
+}
+.otherAmount {
+  font-size: 17px;
+  color: #444;
+}
+.otherAmount input {
+  border: 0;
+  border-bottom: 1px solid #536d92;
+  color: #536d92;
+  padding: 2px 6px;
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  width: 45px;
+  outline: none;
+  text-align: center;
 }
 
 .amazon {
