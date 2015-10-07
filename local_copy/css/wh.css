@@ -57,7 +57,7 @@ h2 {
   margin-top: 55px;
   margin-bottom: 30px;
   border-top: 2px solid #333;
-  background: #05492b url(../i/tweed.dark.green.png);
+  background: #2d511b url(../i/tweed.dark.green.png);
   color: #fff;
   padding: 15px 30px 18px;
 }
@@ -83,7 +83,7 @@ p {
 }
 
 #header, #footer {
-  background: #05492b url(../i/tweed.darkest.green.png);
+  background: #253421 url(../i/tweed.darkest.green.png);
   color: #fff;
 }
 #header {
