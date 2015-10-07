@@ -136,14 +136,13 @@ p {
   margin-bottom: 20px;
   display: inline-block;
   font-size: 24px;
-  padding: 5px 12px 6px 12px;
+  padding: 5px 14px 6px 14px;
   border-radius: 6px;
   cursor: pointer;
   border: 2px solid #87a7b5;
 }
 .donation .button .amount {
   color: #444;
-  padding-right: 2px;
 }
 .donation .button .dollar {
   color: #87a7b5;
@@ -158,6 +157,7 @@ p {
   position: relative;
   bottom: 2px;
   right: 1px;
+  padding-left: 5px;
 }
 .donation .button:hover {
   border: 2px solid #536d92;
