@@ -25,6 +25,7 @@ WH.load = function () {
         break;
       }
     }
+    input.value = '';
     link.onclick = function () { return false; };
     container.oninput = container.onkeydown = container.onkeyup = function () {
       var amount = parseInt(input.value, 10);

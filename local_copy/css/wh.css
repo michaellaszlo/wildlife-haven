@@ -143,6 +143,7 @@ p {
 }
 .donation .button .amount {
   color: #444;
+  padding-right: 2px;
 }
 .donation .button .dollar {
   color: #87a7b5;
