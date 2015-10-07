@@ -47,6 +47,13 @@ WH.load = function () {
       '&p3=12&t3=M&src=1&no_note=1' +
           '&item_name=Donation%20to%20Wildlife%20Haven%20Waterloo'
   );
+  prepOtherAmount(
+      document.getElementById('otherSingle'),
+      'https://www.paypal.com/cgi-bin/webscr?cmd=_donations' +
+          '&business=joyswildlifehaven@gmail.com&amount=',
+      '&currency_code=CAD&lc=CA' +
+          '&item_name=Donation%20to%20Wildlife%20Haven%20Waterloo'
+  );
 };
 
 window.onload = WH.load;
