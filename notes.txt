@@ -2,14 +2,17 @@
 ---------------
 to do
 
-- Amazon section
++ Amazon section
   + restore old HTML
   + add the link code
   + take notes about the referral window
   + revise wording
-  - consider styling
 
-- implement Joy's request for a donation button
+- implement the donation button requested by Joy
+  + basic styling
+  + anchor link
+  + revise styling
+  - smooth scrolling
 
 - light style revision
 

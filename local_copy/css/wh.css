@@ -39,12 +39,39 @@ a:hover {
   font-family: Lato, sans-serif;
   font-weight: 300;
 }
+#header h1 {
+  display: inline-block;
+}
+#donationBanner {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  bottom: 5px;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+#header #donationBanner a {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  background: #ffe;
+  color: #444;
+}
+#header #donationBanner a:hover {
+  color: #222;
+  background: #ffc;
+}
 .contact {
   font-size: 18px;
 }
 @media (min-width: 360px) {
   .contact {
     font-size: 21px;
+  }
+  #header #donationBanner a {
+    font-size: 17px;
   }
 }
 h1 {
