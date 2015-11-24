@@ -8,17 +8,15 @@ to do
   + take notes about the referral window
   + revise wording
 
-- implement the donation button requested by Joy
++ implement the donation button requested by Joy
   + basic styling
   + anchor link
   + revise styling
-  - smooth scrolling
-
-- light style revision
+  + animated scrolling
 
 - check Joy's recent message
 
-- consider style once again
+- review all styling
 
 - test the Amazon link
   - look for something inexpensive and useful

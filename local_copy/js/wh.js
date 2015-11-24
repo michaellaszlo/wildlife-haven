@@ -8,6 +8,12 @@ function makeUnselectable(element) {
 }
 
 WH.load = function () {
+  $('#donationBanner').click(function () {
+    $('html, body').animate({
+      scrollTop: $('#donations').offset().top
+    }, 1000);
+    window.history.pushState(null, null, window.location);
+  });
   var divs = document.getElementsByTagName('div');
   for (var i = divs.length - 1; i >= 0; --i) {
     if (divs[i].className.indexOf('button') != -1) {
