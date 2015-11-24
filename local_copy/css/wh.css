@@ -39,16 +39,10 @@ a:hover {
   font-family: Lato, sans-serif;
   font-weight: 300;
 }
-#header h1 {
-  display: inline-block;
-}
 #donationBanner {
   display: inline-block;
   white-space: nowrap;
-  position: relative;
-  bottom: 5px;
-  padding-left: 30px;
-  padding-top: 15px;
+  margin-top: 20px;
 }
 #header #donationBanner a {
   font-family: Lato, sans-serif;
