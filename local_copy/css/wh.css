@@ -40,20 +40,21 @@ a:hover {
   font-weight: 300;
 }
 #donationBanner {
-  display: inline-block;
   white-space: nowrap;
-  margin-top: 20px;
+  margin: 20px 30px 10px;
 }
-#header #donationBanner a {
+#donationBanner a {
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 14px;
   padding: 4px 10px;
+  border: 2px solid #91b285;
   border-radius: 5px;
   background: #ffe;
   color: #444;
 }
-#header #donationBanner a:hover {
+#donationBanner a:hover {
+  border-color: #7d9973;
   color: #222;
   background: #ffc;
 }
@@ -64,7 +65,7 @@ a:hover {
   .contact {
     font-size: 21px;
   }
-  #header #donationBanner a {
+  #donationBanner a {
     font-size: 17px;
   }
 }
