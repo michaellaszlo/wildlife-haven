@@ -1,12 +1,51 @@
 
-Trying to match the design of the business card
+---------------
+to do
 
-headline:
+- Amazon section
+  + restore old HTML
+  + add the link code
+  + take notes about the referral window
+  + revise wording
+  - consider styling
+
+- implement Joy's request for a donation button
+
+- light style revision
+
+- check Joy's recent message
+
+- consider style once again
+
+- test the Amazon link
+  - look for something inexpensive and useful
+  - clear all Amazon cookies
+  - click on the link
+  - add the item to the shopping cart
+  - submit the order
+  - how can Joy check if it worked?
+
+
+---------------
+Amazon Associates
+
+Referral window after link is clicked:
+- items must be placed in the shopping cart within 24 hours
+- the window closes when the order is submitted
+- to make a subsequent order count, the referral link must be used again
+  https://affiliate-program.amazon.com/gp/associates/help/t2/a11
+  https://associates.amazon.ca/gp/associates/help/t2/a11
+
+
+---------------
+Google web fonts that resemble the title font on Joy's business card 
+
   Oleo Script
   Sansita One
   Paprika
 
 
+---------------
 PayPal links
 
 Create a Donate button
