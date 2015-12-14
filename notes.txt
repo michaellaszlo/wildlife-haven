@@ -39,11 +39,20 @@ Referral window after link is clicked:
 
 
 ---------------
-Google web fonts that resemble the title font on Joy's business card 
+Options for the logo font
 
+closest match
+  Paprika
+
+cursive
   Oleo Script
   Sansita One
-  Paprika
+
+serif
+  Gabriela
+  Marko One
+  Quando
+  Stoke
 
 
 ---------------
