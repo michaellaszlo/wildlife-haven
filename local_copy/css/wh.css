@@ -143,47 +143,47 @@ p {
   padding-bottom: 30px;
 }
 
-#holidayItems {
-  border: 2px solid #a33c41;
+#springItems {
+  border: 2px solid #155227;
   border-radius: 2px;
   margin: 20px 30px;
   padding-bottom: 20px;
   font-size: 17px;
   max-width: 800px;
 }
-#holidayItems h3 {
+#springItems h3 {
   color: #222;
-  background: #faf2f6;
+  background: #eafbf0;
   margin-top: 0;
   padding: 15px 15px;
-  border-bottom: 1px solid #e7cbcd;
+  border-bottom: 1px solid #b4d8bd;
 }
-#holidayItems .special, #holidayItems .special h4 {
-  color: #8d0f11;
+#springItems .special, #springItems .special h4 {
+  color: #0e520b;
 }
-#holidayItems h4, #holidayItems p {
+#springItems h4, #springItems p {
   padding-left: 15px;
   padding-right: 15px;
 }
-#holidayItems h4 {
+#springItems h4 {
   margin-top: 15px;
   padding-top: 15px;
-  border-top: 1px solid #e7cbcd;
+  border-top: 1px solid #b4d8bd;
   color: #222;
 }
-#holidayItems p {
+#springItems p {
   margin-top: 15px;
   line-height: 25px;
 }
-#holidayItems ul {
+#springItems ul {
   margin-top: 5px;
 }
-#holidayItems li {
+#springItems li {
   line-height: 25px;
   margin-left: -5px;
   padding-right: 15px;
 }
-#holidayItems img {
+#springItems img {
   margin-left: 15px;
   margin-top: 10px;
   max-width: 90%;
