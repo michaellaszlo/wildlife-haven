@@ -143,6 +143,25 @@ p {
   padding-bottom: 30px;
 }
 
+.video {
+  margin-left: 30px;
+  padding-top: 20px;
+  width: 480px;
+  height: 270px;
+}
+
+#summerMovieEvent {
+  background: #ffd;
+  margin: 20px 0;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+#summerMovieEvent h3 {
+  color: #000;
+  padding-top: 20px;
+}
+
 #springItems {
   border: 2px solid #155227;
   border-radius: 2px;
