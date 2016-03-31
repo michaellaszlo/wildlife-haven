@@ -7,20 +7,6 @@ var WH = function () {
     };
   }
 
-  function resize() {
-    var videoWidth = Math.min(0.9 * (window.innerWidth - 20), 800),
-        videoHeight = videoWidth * 9 / 16,
-        iframes = document.getElementsByTagName('iframe'),
-        i;
-    for (i = 0; i < iframes.length; ++i) {
-      if (iframes[i].className.indexOf('video') == -1) {
-        continue;
-      }
-      iframes[i].style.width = videoWidth + 'px';
-      iframes[i].style.height = videoHeight + 'px';
-    }
-  }
-
   function prepOtherAmount(container, prefix, suffix) {
     var input = container.getElementsByTagName('input')[0],
         link = container.getElementsByTagName('a')[0],
@@ -82,15 +68,11 @@ var WH = function () {
         '&currency_code=CAD&lc=CA' +
             '&item_name=Donation%20to%20Wildlife%20Haven%20Waterloo'
     );
-
-    resize();
   }
 
   return {
-    load: load,
-    resize: resize
+    load: load
   };
 }();
 
 onload = WH.load;
-onresize = WH.resize;

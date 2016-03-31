@@ -146,8 +146,20 @@ p {
 .video {
   margin-left: 30px;
   padding-top: 20px;
-  width: 480px;
-  height: 270px;
+  width: 280px;
+  height: 200px;
+}
+@media (min-width: 500px) {
+  .video {
+    width: 480px;
+    height: 270px;
+  }
+}
+@media (min-width: 800px) {
+  .video {
+    width: 720px;
+    height: 450px;
+  }
 }
 
 #summerMovieEvent {
