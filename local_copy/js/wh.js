@@ -11,9 +11,39 @@ var WH = function () {
     var input = container.getElementsByTagName('input')[0],
         link = container.getElementsByTagName('a')[0],
         spans = container.getElementsByTagName('span'),
+        divs = container.getElementsByTagName('div'),
+        tip,
+        tipOpacity,
+        tipStartFade,
         amountSpan,
         amount,
         i;
+    function fadeTip() {
+      tipOpacity = Math.max(0,
+          Math.min(1, 2.5 - (Date.now() - tipStartFade) / 1000));
+      tip.style.opacity = tipOpacity;
+      if (tipOpacity > 0) {
+        requestAnimationFrame(fadeTip);
+      }
+    }
+    function startFadeTip(){
+      if (tip) {
+        tipStartFade = Date.now();
+        tip.style.display = 'inline';
+        tip.style.opacity = 1;
+        fadeTip();
+      }
+      return false;
+    }
+    for (i = 0; i < divs.length; ++i) {
+      if (divs[i].className == 'tip') {
+        tip = divs[i];
+        tip.style.left = input.offsetLeft + (input.offsetWidth -
+            tip.offsetWidth) / 2 + 'px';
+        tip.style.top = input.offsetTop + input.offsetHeight + 'px';
+        break;
+      }
+    }
     for (i = 0; i < spans.length; ++i) {
       if (spans[i].className == 'amount') {
         amountSpan = spans[i];
@@ -21,13 +51,13 @@ var WH = function () {
       }
     }
     input.value = '';
-    link.onclick = function () { return false; };
+    link.onclick = startFadeTip;
     container.oninput = container.onkeydown = container.onkeyup = function () {
       amount = parseInt(input.value, 10);
       if (amount !== amount || amount < 1) {
         amountSpan.innerHTML = '';
         link.href = '';
-        link.onclick = function () { return false; };
+        link.onclick = startFadeTip;
       } else {
         amountSpan.innerHTML = amount;
         link.href = prefix + amount + suffix;
