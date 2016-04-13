@@ -1,4 +1,5 @@
 var WH = function () {
+  'use strict';
 
   function makeUnselectable(element) {
     element.className += ' unselectable';
@@ -7,11 +8,50 @@ var WH = function () {
     };
   }
 
+  function prepTicketButtons() {
+    var ticketPrice = 15,
+        container = $('#tickets'),
+        quantity = container.find('.number'),
+        suffix = container.find('.suffix'),
+        minus = container.find('.button.minus'),
+        plus = container.find('.button.plus'),
+        dollars = container.find('.amount'),
+        link = container.find('a');
+    function buildUrl(count) {
+      var url;
+      url = 'https://www.paypal.com/cgi-bin/webscr?cmd=_xclick' +
+          '&business=joyswildlifehaven@gmail.com&quantity=' + count +
+          '&amount=' + ticketPrice + '&currency_code=CAD&lc=CA' +
+          '&item_name=Ticket' + (count == 1 ? '' : 's') +
+          '%20for%20The%20Messenger,%20June%2016';
+      return url;
+    }
+    minus.click(function () {
+      var count = parseInt(quantity.html(), 10) - 1;
+      if (count < 1) {
+        return;
+      }
+      link.attr('href', buildUrl(count));
+      quantity.html(count);
+      dollars.html(count * ticketPrice);
+      if (count == 1) {
+        minus.addClass('disabled');
+        suffix.html('');
+      }
+    });
+    plus.click(function () {
+      var count = parseInt(quantity.html(), 10) + 1;
+      link.attr('href', buildUrl(count));
+      quantity.html(count);
+      dollars.html(count * ticketPrice);
+      suffix.html('s');
+      minus.removeClass('disabled');
+    });
+  }
+
   function prepOtherAmount(container, prefix, suffix) {
-    var input = container.getElementsByTagName('input')[0],
-        link = container.getElementsByTagName('a')[0],
-        spans = container.getElementsByTagName('span'),
-        divs = container.getElementsByTagName('div'),
+    var input = $(container).find('input')[0],
+        link = $(container).find('a')[0],
         tip,
         tipOpacity,
         tipStartFade,
@@ -35,21 +75,13 @@ var WH = function () {
       }
       return false;
     }
-    for (i = 0; i < divs.length; ++i) {
-      if (divs[i].className == 'tip') {
-        tip = divs[i];
-        tip.style.left = input.offsetLeft + (input.offsetWidth -
-            tip.offsetWidth) / 2 + 'px';
-        tip.style.top = input.offsetTop + input.offsetHeight + 'px';
-        break;
-      }
-    }
-    for (i = 0; i < spans.length; ++i) {
-      if (spans[i].className == 'amount') {
-        amountSpan = spans[i];
-        break;
-      }
-    }
+    $(container).find('div.tip').each(function () {
+      tip = this;
+      tip.style.left = input.offsetLeft + (input.offsetWidth -
+          tip.offsetWidth) / 2 + 'px';
+      tip.style.top = input.offsetTop + input.offsetHeight + 'px';
+    });
+    amountSpan = $(container).find('span.amount')[0];
     input.value = '';
     link.onclick = startFadeTip;
     container.oninput = container.onkeydown = container.onkeyup = function () {
@@ -67,21 +99,18 @@ var WH = function () {
   }
 
   function load() {
-    var divs = document.getElementsByTagName('div'),
-        i;
-
     $('#donationBanner').click(function () {
       $('html, body').animate({
         scrollTop: $('#donations').offset().top
       }, 1000);
       window.history.pushState(null, null, window.location);
     });
-    
-    for (i = 0; i < divs.length; ++i) {
-      if (divs[i].className.indexOf('button') != -1) {
-        makeUnselectable(divs[i]);
-      }
-    }
+
+    $('div .button').each(function () {
+      makeUnselectable(this);
+    });
+
+    prepTicketButtons();
 
     prepOtherAmount(
         document.getElementById('otherMonthly'),
