@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.whwLogo {
+  font-family: Paprika;
+}
+
+#flyer {
+  width: 412px;
+  height: 600px;
+  background: #01192f url('half.poster.412x350.png') no-repeat 0 100px;
+  font-family: 'Source Sans Pro';
+  position: relative;
+}
+
+#movieTitle {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 27px;
+  color: #fff;
+  text-align: center;
+}
+
+#blurb {
+  position: absolute;
+  bottom: 500px;
+  left: 15px;
+  padding-bottom: 10px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-size: 14px;
+  text-align: left;
+  background: url('translucent.png');
+  background: #02182f;
+  background: #01192f;
+  color: #fff;
+}
+
+#summary {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  text-align: right;
+  position: absolute;
+  bottom: 160px;
+  right: 0;
+}
+#summary div, #invitation .webAddress {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 1px 10px 2px 15px;
+  background: url('translucent.png');
+  color: #fff;
+  position: relative;
+  -webkit-clip-path: polygon(0 100%, 10px 0, 100% 0, 100% 100%);
+  clip-path: polygon(0 100%, 10px 0, 100% 0, 100% 100%);
+}
+#summary div.highlight {
+  color: #ffb;
+}
+
+#invitation {
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  font-style: normal;
+  color: #fff;
+  position: absolute;
+  bottom: 65px;
+  padding: 0 25px;
+}
+#invitation .webAddress {
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+  margin-top: 10px;
+  text-align: right;
+}
+#invitation .url {
+  color: #ffb;
+  padding-left: 0;
+  font-style: italic;
+}
