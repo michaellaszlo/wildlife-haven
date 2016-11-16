@@ -1,43 +1,3 @@
-
----------------
-to do
-
-+ Amazon section
-  + restore old HTML
-  + add the link code
-  + take notes about the referral window
-  + revise wording
-
-+ implement the donation button requested by Joy
-  + basic styling
-  + anchor link
-  + revise styling
-  + animated scrolling
-
-- check Joy's recent message
-
-- review all styling
-
-- test the Amazon link
-  - look for something inexpensive and useful
-  - clear all Amazon cookies
-  - click on the link
-  - add the item to the shopping cart
-  - submit the order
-  - how can Joy check if it worked?
-
-
----------------
-Amazon Associates
-
-Referral window after link is clicked:
-- items must be placed in the shopping cart within 24 hours
-- the window closes when the order is submitted
-- to make a subsequent order count, the referral link must be used again
-  https://affiliate-program.amazon.com/gp/associates/help/t2/a11
-  https://associates.amazon.ca/gp/associates/help/t2/a11
-
-
 ---------------
 Options for the logo font
 
@@ -56,7 +16,18 @@ serif
 
 
 ---------------
-PayPal links
+Amazon Associates
+
+Referral window after link is clicked:
+- items must be placed in the shopping cart within 24 hours
+- the window closes when the order is submitted
+- to make a subsequent order count, the referral link must be used again
+  https://affiliate-program.amazon.com/gp/associates/help/t2/a11
+  https://associates.amazon.ca/gp/associates/help/t2/a11
+
+
+---------------
+PayPal docs
 
 Create a Donate button
 https://www.paypal.com/us/webapps/mpp/get-started/donate-button

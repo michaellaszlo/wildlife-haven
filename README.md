@@ -1,5 +1,21 @@
-# Wildlife Haven
+# Wildlife Haven Waterloo
 
-This is a website that I am making on a pro bono basis for Wildlife Haven, a licensed wildlife rehabilitation center in Waterloo, Ontario.
+## Website for Wildlife Haven Waterloo, a licensed wildlife rehabilitation center
 
-The initial version of the website is a lightweight one-page design with minimal JavaScript effects.
+This is a one-page website for Wildlife Haven Waterloo.
+
+Primary features:
+- contact information
+- donation buttons
+- background material
+
+The page is mostly made with static HTML and CSS, with a small amount
+of DOM manipulation on page load.
+
+External dependencies:
+- Google Fonts
+- Font Awesome
+- jQuery
+
+![Wildlife Haven Waterloo](screenshot.png)
+
