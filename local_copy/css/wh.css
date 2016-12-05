@@ -30,6 +30,7 @@ img {
 a {
   text-decoration: none;
   color: #235695;
+  outline: none;
 }
 a:hover {
   color: #952e36;
@@ -273,7 +274,7 @@ p {
   border-radius: 4px;
 }
 
-#springItems {
+#holidayItems {
   border: 2px solid #155227;
   border-radius: 2px;
   margin: 20px 30px;
@@ -281,39 +282,39 @@ p {
   font-size: 17px;
   max-width: 800px;
 }
-#springItems h3 {
+#holidayItems h3 {
   color: #222;
   background: #eafbf0;
   margin-top: 0;
   padding: 15px 15px;
   border-bottom: 1px solid #b4d8bd;
 }
-#springItems .special, #springItems .special h4 {
+#holidayItems .special, #holidayItems .special h4 {
   color: #0e520b;
 }
-#springItems h4, #springItems p {
+#holidayItems h4, #holidayItems p {
   padding-left: 15px;
   padding-right: 15px;
 }
-#springItems h4 {
+#holidayItems h4 {
   margin-top: 15px;
   padding-top: 15px;
   border-top: 1px solid #b4d8bd;
   color: #222;
 }
-#springItems p {
+#holidayItems p {
   margin-top: 15px;
   line-height: 25px;
 }
-#springItems ul {
+#holidayItems ul {
   margin-top: 5px;
 }
-#springItems li {
+#holidayItems li {
   line-height: 25px;
   margin-left: -5px;
   padding-right: 15px;
 }
-#springItems img {
+#holidayItems img {
   margin-left: 15px;
   margin-top: 10px;
   max-width: 90%;
