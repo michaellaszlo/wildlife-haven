@@ -275,7 +275,7 @@ p {
 }
 
 #holidayItems {
-  border: 2px solid #155227;
+  border: 2px solid #972013;
   border-radius: 2px;
   margin: 20px 30px;
   padding-bottom: 20px;
@@ -283,24 +283,20 @@ p {
   max-width: 800px;
 }
 #holidayItems h3 {
-  color: #222;
-  background: #eafbf0;
+  color: #8a1810;
   margin-top: 0;
   padding: 15px 15px;
-  border-bottom: 1px solid #b4d8bd;
-}
-#holidayItems .special, #holidayItems .special h4 {
-  color: #0e520b;
+  border-bottom: 1px solid #972013;
 }
 #holidayItems h4, #holidayItems p {
   padding-left: 15px;
   padding-right: 15px;
 }
 #holidayItems h4 {
-  margin-top: 15px;
+  color: #8a1810;
+  margin-top: 20px;
   padding-top: 15px;
-  border-top: 1px solid #b4d8bd;
-  color: #222;
+  border-top: 1px solid #972013;
 }
 #holidayItems p {
   margin-top: 15px;
@@ -308,6 +304,7 @@ p {
 }
 #holidayItems ul {
   margin-top: 5px;
+  margin-bottom: 0;
 }
 #holidayItems li {
   line-height: 25px;
@@ -316,7 +313,7 @@ p {
 }
 #holidayItems img {
   margin-left: 15px;
-  margin-top: 10px;
+  margin-top: 15px;
   max-width: 90%;
 }
 
