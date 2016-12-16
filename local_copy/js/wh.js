@@ -117,7 +117,7 @@ var WH = function () {
         'https://www.paypal.com/cgi-bin/webscr?' + 
             'cmd=_xclick-subscriptions&business=joyswildlifehaven@gmail.com' +
             '&currency_code=CAD&lc=CA&a3=',
-        '&p3=12&t3=M&src=1&no_note=1' +
+        '&p3=1&t3=M&src=1&srt=12&no_note=1' +
             '&item_name=Donation%20to%20Wildlife%20Haven%20Waterloo'
     );
     prepOtherAmount(
